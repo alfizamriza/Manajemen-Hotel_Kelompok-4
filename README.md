@@ -4,4 +4,4 @@
 - Nuri Masyithah
 - Indriani Miza Alfiyanti
 - Az-Zalzilia Sari
-- Reyan Andrea
+- Reyan Andrea (2208107010014)
