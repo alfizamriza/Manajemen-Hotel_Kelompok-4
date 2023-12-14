@@ -167,3 +167,8 @@ public class CheckOut extends javax.swing.JFrame {
                 CariFocusLost(evt);
             }
         });
+        Cari.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CariActionPerformed(evt);
+            }
+        });
