@@ -43,3 +43,9 @@ public class CheckOut extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Gagal melakukan Check Out",
                         "Error", JOptionPane.ERROR_MESSAGE);
             }
+         } catch (SQLException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Terjadi kesalahan saat melakukan Check Out.",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
