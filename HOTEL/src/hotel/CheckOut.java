@@ -147,3 +147,13 @@ public class CheckOut extends javax.swing.JFrame {
             }
         ));
         jScrollPane1.setViewportView(tKosong);
+
+        bCheckOut.setBackground(new java.awt.Color(0, 51, 255));
+        bCheckOut.setForeground(new java.awt.Color(255, 255, 255));
+        bCheckOut.setText("CHECK OUT");
+        bCheckOut.setAutoscrolls(true);
+        bCheckOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bCheckOutActionPerformed(evt);
+            }
+        });
