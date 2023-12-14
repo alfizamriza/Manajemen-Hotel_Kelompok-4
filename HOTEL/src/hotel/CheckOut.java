@@ -39,3 +39,7 @@ public class CheckOut extends javax.swing.JFrame {
                 Home HM = new Home();
                 HM.setVisible(true);
                 this.dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "Gagal melakukan Check Out",
+                        "Error", JOptionPane.ERROR_MESSAGE);
+            }
