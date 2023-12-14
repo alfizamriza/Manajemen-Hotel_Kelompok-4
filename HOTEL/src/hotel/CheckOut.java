@@ -18,3 +18,4 @@ import net.proteanit.sql.DbUtils;
  *
  * @author Asus
  */
+public class CheckOut extends javax.swing.JFrame {
