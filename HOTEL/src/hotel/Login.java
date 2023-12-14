@@ -174,3 +174,33 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 510, 500));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void t_usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t_usernameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_t_usernameActionPerformed
+
+    private void t_passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t_passwordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_t_passwordActionPerformed
+
+    private void t_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t_loginActionPerformed
+        String sql = "SELECT * FROM login WHERE username=? and password=?";
+        try {
+            pst= conn.prepareStatement(sql);
+            pst.setString(1, t_username.getText());
+            pst.setString(2, String.valueOf(t_password.getText()));
+            rs = pst.executeQuery();
+            
+            if (rs.next()) { // Fix: Check if there are results in the ResultSet
+                Home HM = new Home();
+                HM.setVisible(true);
+                this.dispose();
+                JOptionPane.showMessageDialog(null, "Sukses");
+            } else {
+                JOptionPane.showMessageDialog(null, "Username dan Password masih salah");
+            }
