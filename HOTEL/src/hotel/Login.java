@@ -69,3 +69,26 @@ public class Login extends javax.swing.JFrame {
                 t_usernameFocusLost(evt);
             }
         });
+        t_username.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                t_usernameActionPerformed(evt);
+            }
+        });
+
+        t_password.setForeground(new java.awt.Color(51, 51, 255));
+        t_password.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t_password.setText("Password");
+        t_password.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 255)));
+        t_password.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                t_passwordFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                t_passwordFocusLost(evt);
+            }
+        });
+        t_password.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                t_passwordActionPerformed(evt);
+            }
+        });
