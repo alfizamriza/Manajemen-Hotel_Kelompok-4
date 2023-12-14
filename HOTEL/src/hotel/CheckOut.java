@@ -244,3 +244,19 @@ public class CheckOut extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_bCheckOutActionPerformed
 
+     private void CariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CariActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CariActionPerformed
+
+    private void bCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCariActionPerformed
+        ViewData();
+    }//GEN-LAST:event_bCariActionPerformed
+
+    private void CariFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CariFocusGained
+        String cr = Cari.getText();
+        if (cr.equals("Cari nomor kamar")) {
+            Cari.setText("");
+        }
+    }//GEN-LAST:event_CariFocusGained
+
+
