@@ -287,4 +287,17 @@ int xx, xy;
         dispose();
     }//GEN-LAST:event_jLabel8MouseClicked
 
+   public ResultSet cekKamar() {
+        String sql = "SELECT * FROM customer WHERE no_kamar=? and status=?";
+        try {
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, Cari.getText());
+            pst.setString(2, "Belum");
+            return pst.executeQuery();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+            return null;
+        }
+    }
+
 
