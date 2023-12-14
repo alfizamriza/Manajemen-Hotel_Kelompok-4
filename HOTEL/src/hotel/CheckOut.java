@@ -163,3 +163,7 @@ public class CheckOut extends javax.swing.JFrame {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 CariFocusGained(evt);
             }
+             public void focusLost(java.awt.event.FocusEvent evt) {
+                CariFocusLost(evt);
+            }
+        });
