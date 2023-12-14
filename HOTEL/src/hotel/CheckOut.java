@@ -73,3 +73,14 @@ public class CheckOut extends javax.swing.JFrame {
       @SuppressWarnings("unchecked")
       // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
       private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tKosong = new javax.swing.JTable();
+        bCheckOut = new javax.swing.JButton();
+        Cari = new javax.swing.JTextField();
+        bCari = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
