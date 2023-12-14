@@ -260,3 +260,43 @@ public void ViewData() {
 
     pack();
 }// </editor-fold>//GEN-END:initComponents
+
+public void pendapatan() {
+        try {
+            String sql = "SELECT SUM(harga) AS total_harga FROM customer WHERE status=?;";
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, "Sudah");
+
+            // Execute the query and retrieve the result set
+            ResultSet rs = pst.executeQuery();
+
+            // Check if there is a result (assuming you want to display it in a text field)
+            if (rs.next()) {
+                // Format the double value as Indonesian Rupiah with three digits after the decimal point
+                double totalHarga = rs.getDouble("total_harga");
+
+                DecimalFormatSymbols symbols = new DecimalFormatSymbols(new Locale("id", "ID"));
+                symbols.setDecimalSeparator(',');
+                symbols.setGroupingSeparator('.');
+
+                DecimalFormat currencyFormat = new DecimalFormat("#,##0.000", symbols);
+                String formattedTotalHarga = currencyFormat.format(totalHarga);
+
+                // Assuming "txPendapatan" is a JTextField
+                txPendapatan.setText(formattedTotalHarga);
+            } else {
+                // Handle the case where there is no result
+                System.out.println("No result found.");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pst != null) {
+                    pst.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
