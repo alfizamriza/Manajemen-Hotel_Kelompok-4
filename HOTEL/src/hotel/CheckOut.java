@@ -236,3 +236,11 @@ public class CheckOut extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+        private void bCheckOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCheckOutActionPerformed
+        try {
+            ubahStatus();
+        } catch (SQLException ex) {
+            Logger.getLogger(CheckOut.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_bCheckOutActionPerformed
+
