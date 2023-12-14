@@ -58,3 +58,10 @@ public class CheckOut extends javax.swing.JFrame {
         System.out.println(rowsAffected + " baris berhasil diubah.");
 
     }
+    /**
+     * Creates new form CheckIn
+     */
+    public CheckOut() {
+        initComponents();
+//      tanggal.setIndex(cbTipeKamar.getSelectedIndex());
+    }
