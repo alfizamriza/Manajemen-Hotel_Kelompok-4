@@ -224,3 +224,17 @@ public class Login extends javax.swing.JFrame {
             t_password.setText("");
         }
     }//GEN-LAST:event_t_passwordFocusGained
+
+    private void t_usernameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_t_usernameFocusLost
+        String username=t_username.getText();
+        if(username.equals("") || username.equals("Username")){
+            t_username.setText("Username");
+        }
+    }//GEN-LAST:event_t_usernameFocusLost
+
+    private void t_passwordFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_t_passwordFocusLost
+        String password=t_password.getText();
+        if(password.equals("") || password.equals("Password")){
+            t_password.setText("Password");
+        }
+    }//GEN-LAST:event_t_passwordFocusLost
