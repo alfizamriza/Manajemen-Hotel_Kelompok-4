@@ -53,3 +53,19 @@ public class Login extends javax.swing.JFrame {
                 formMousePressed(evt);
             }
         });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        t_username.setForeground(new java.awt.Color(51, 51, 255));
+        t_username.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t_username.setText("Username");
+        t_username.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255)));
+        t_username.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                t_usernameFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                t_usernameFocusLost(evt);
+            }
+        });
