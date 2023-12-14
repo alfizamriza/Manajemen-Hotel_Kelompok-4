@@ -134,3 +134,15 @@ public class CheckOut extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 51, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("CHECK OUT");
+
+        tKosong.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Nama", "NIK", "No Kamar", "Tanggal", "Harga"
+            }
+        ));
