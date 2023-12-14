@@ -109,3 +109,13 @@ public void ViewData() {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setMinimumSize(new java.awt.Dimension(1020, 550));
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 255));
+
+        jButton1.setBackground(new java.awt.Color(0, 51, 255));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/home (2).png"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
