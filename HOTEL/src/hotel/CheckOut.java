@@ -25,3 +25,11 @@ public class CheckOut extends javax.swing.JFrame {
     PreparedStatement pst = null;
 
     public void ubahStatus() throws SQLException {
+       try {
+            String sql = "update kamar set status=? where no_kamar=?";
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, "Not Booking"); // Parameter pertama: status
+            pst.setString(2, Cari.getText()); // Parameter kedua: nomor kamar
+            int rowsAffected = pst.executeUpdate(); // Menggunakan executeUpdate, bukan executeQuery
+            ubahStatusCostumer();
+            System.out.println(rowsAffected + " baris berhasil diubah.");
