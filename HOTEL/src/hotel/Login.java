@@ -92,3 +92,17 @@ public class Login extends javax.swing.JFrame {
                 t_passwordActionPerformed(evt);
             }
         });
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 51, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("LOGIN");
+
+        t_login.setBackground(new java.awt.Color(51, 51, 255));
+        t_login.setForeground(new java.awt.Color(255, 255, 255));
+        t_login.setText("LOGIN");
+        t_login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                t_loginActionPerformed(evt);
+            }
+        });
