@@ -31,3 +31,12 @@ public class Login extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+    jPanel1 = new javax.swing.JPanel();
+        t_username = new javax.swing.JTextField();
+        t_password = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        t_login = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
