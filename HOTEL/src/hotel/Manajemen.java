@@ -16,3 +16,25 @@ import net.proteanit.sql.DbUtils;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
+
+/**
+ *
+ * @author Asus
+ */
+public class Manajemen extends javax.swing.JFrame {
+
+    Connection conn = Koneksi.getKoneksi();
+    ResultSet rs = null;
+    PreparedStatement pst = null;
+
+    public ResultSet cekKamar() {
+        String sql = "SELECT * FROM customer WHERE status=?";
+        try {
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, "Sudah");
+            return pst.executeQuery();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+            return null;
+        }
+    }
