@@ -100,3 +100,8 @@ public void ViewData() {
                 formMouseDragged(evt);
             }
         });
+        addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                formMousePressed(evt);
+            }
+        });
