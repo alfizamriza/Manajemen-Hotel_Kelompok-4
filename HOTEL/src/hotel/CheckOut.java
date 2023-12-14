@@ -13,3 +13,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 import net.proteanit.sql.DbUtils;
+
+/**
+ *
+ * @author Asus
+ */
