@@ -172,3 +172,12 @@ public class CheckOut extends javax.swing.JFrame {
                 CariActionPerformed(evt);
             }
         });
+
+        bCari.setBackground(new java.awt.Color(51, 51, 255));
+        bCari.setForeground(new java.awt.Color(255, 255, 255));
+        bCari.setText("Cari");
+        bCari.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bCariActionPerformed(evt);
+            }
+        });
