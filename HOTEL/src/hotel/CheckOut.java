@@ -122,3 +122,10 @@ public class CheckOut extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addContainerGap(26, Short.MAX_VALUE))
         );
+                jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jButton1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
