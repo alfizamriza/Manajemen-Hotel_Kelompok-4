@@ -23,3 +23,5 @@ public class CheckOut extends javax.swing.JFrame {
     Connection conn = Koneksi.getKoneksi();
     ResultSet rs = null;
     PreparedStatement pst = null;
+
+    public void ubahStatus() throws SQLException {
