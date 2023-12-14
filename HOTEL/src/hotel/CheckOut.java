@@ -259,4 +259,32 @@ public class CheckOut extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_CariFocusGained
 
+    private void CariFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CariFocusLost
+        String cr = Cari.getText();
+        if (cr.equals("") || cr.equals("Username")) {
+            Cari.setText("Username");
+        }
+    }//GEN-LAST:event_CariFocusLost
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Home HM = new Home();
+        HM.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+int xx, xy;
+    private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
+        xx = evt.getX();
+        xy = evt.getY();
+    }//GEN-LAST:event_formMousePressed
+
+    private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        this.setLocation(x - xx, y - xy);
+    }//GEN-LAST:event_formMouseDragged
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        dispose();
+    }//GEN-LAST:event_jLabel8MouseClicked
+
 
