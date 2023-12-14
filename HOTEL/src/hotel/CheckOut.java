@@ -33,3 +33,9 @@ public class CheckOut extends javax.swing.JFrame {
             int rowsAffected = pst.executeUpdate(); // Menggunakan executeUpdate, bukan executeQuery
             ubahStatusCostumer();
             System.out.println(rowsAffected + " baris berhasil diubah.");
+            if (rowsAffected > 0) {
+                JOptionPane.showMessageDialog(null, "Berhasil Check Out",
+                        "Sukses", JOptionPane.INFORMATION_MESSAGE);
+                Home HM = new Home();
+                HM.setVisible(true);
+                this.dispose();
