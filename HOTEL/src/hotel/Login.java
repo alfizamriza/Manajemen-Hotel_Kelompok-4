@@ -204,3 +204,23 @@ public class Login extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Username dan Password masih salah");
             }
+
+        } catch (Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_t_loginActionPerformed
+
+    private void t_usernameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_t_usernameFocusGained
+        String username=t_username.getText();
+        if(username.equals("Username")) {
+            t_username.setText("");
+        }
+    }//GEN-LAST:event_t_usernameFocusGained
+
+    private void t_passwordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_t_passwordFocusGained
+
+        String password=t_password.getText();
+        if(password.equals("Password")) {
+            t_password.setText("");
+        }
+    }//GEN-LAST:event_t_passwordFocusGained
