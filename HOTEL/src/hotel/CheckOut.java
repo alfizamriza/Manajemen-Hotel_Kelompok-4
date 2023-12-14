@@ -49,3 +49,12 @@ public class CheckOut extends javax.swing.JFrame {
                     "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
+    public void ubahStatusCostumer() throws SQLException {
+        String sql = "update customer set status=? where no_kamar=?";
+        pst = conn.prepareStatement(sql);
+        pst.setString(1, "Sudah"); // Parameter pertama: status
+        pst.setString(2, Cari.getText()); // Parameter kedua: nomor kamar
+        int rowsAffected = pst.executeUpdate(); // Menggunakan executeUpdate, bukan executeQuery
+        System.out.println(rowsAffected + " baris berhasil diubah.");
+
+    }
