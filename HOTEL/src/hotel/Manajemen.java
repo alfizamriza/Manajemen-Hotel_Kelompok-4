@@ -60,3 +60,11 @@ public void ViewData() {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
     }
+
+    /**
+     * Creates new form CheckIn
+     */
+    public Manajemen() {
+        initComponents();
+//      tanggal.setIndex(cbTipeKamar.getSelectedIndex());
+    }
