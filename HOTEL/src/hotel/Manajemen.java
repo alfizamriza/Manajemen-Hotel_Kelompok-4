@@ -300,3 +300,33 @@ public void pendapatan() {
             }
         }
     }
+
+public void Total() {
+        try {
+            String sql = "SELECT COUNT(*) AS Pengunjung FROM customer WHERE status=?;";
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, "Sudah");
+
+            // Execute the query and retrieve the result set
+            ResultSet rs = pst.executeQuery();
+
+            // Check if there is a result (assuming you want to display it in a text field)
+            if (rs.next()) {
+                // Assuming "txPengunjung" is a JTextField
+                txPengunjung.setText(String.valueOf(rs.getInt("Pengunjung")));
+            } else {
+                // Handle the case where there is no result
+                System.out.println("No result found.");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pst != null) {
+                    pst.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
