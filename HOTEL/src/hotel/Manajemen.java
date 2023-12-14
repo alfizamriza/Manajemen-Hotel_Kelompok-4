@@ -142,3 +142,17 @@ public void ViewData() {
         jLabel1.setForeground(new java.awt.Color(0, 51, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MANAJEMEN");
+
+        tKosong.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        tKosong.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Nama", "NIK", "No Kamar", "Tanggal", "Harga"
+            }
+        ));
