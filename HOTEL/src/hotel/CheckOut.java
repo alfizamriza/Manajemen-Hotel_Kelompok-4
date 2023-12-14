@@ -103,4 +103,5 @@ public class CheckOut extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setMinimumSize(new java.awt.Dimension(1030, 550));
 
+        jPanel2.setBackground(new java.awt.Color(51, 51, 255));
 
