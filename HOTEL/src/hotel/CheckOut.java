@@ -122,10 +122,15 @@ public class CheckOut extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addContainerGap(26, Short.MAX_VALUE))
         );
-                jPanel2Layout.setVerticalGroup(
+        jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel1.setFont(new java.awt.Font("Catamaran Black", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("CHECK OUT");
