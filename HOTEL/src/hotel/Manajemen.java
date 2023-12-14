@@ -156,3 +156,10 @@ public void ViewData() {
                 "Nama", "NIK", "No Kamar", "Tanggal", "Harga"
             }
         ));
+
+        tKosong.setFocusable(false);
+        tKosong.setSelectionBackground(new java.awt.Color(0, 51, 255));
+        tKosong.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        tKosong.setShowHorizontalLines(true);
+        tKosong.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(tKosong);
