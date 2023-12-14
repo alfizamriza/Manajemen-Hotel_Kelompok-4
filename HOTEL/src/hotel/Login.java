@@ -106,3 +106,10 @@ public class Login extends javax.swing.JFrame {
                 t_loginActionPerformed(evt);
             }
         });
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cross-small (1).png"))); // NOI18N
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
