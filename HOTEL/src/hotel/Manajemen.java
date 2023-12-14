@@ -180,3 +180,11 @@ public void ViewData() {
                 txPendapatanActionPerformed(evt);
             }
         });
+
+        jLabel2.setText("Pendapatan");
+
+        txPengunjung.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        txPengunjung.setForeground(new java.awt.Color(0, 0, 255));
+        txPengunjung.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jLabel3.setText("Pengunjung");
