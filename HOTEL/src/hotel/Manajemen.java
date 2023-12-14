@@ -188,3 +188,10 @@ public void ViewData() {
         txPengunjung.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel3.setText("Pengunjung");
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cross-small (1).png"))); // NOI18N
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
