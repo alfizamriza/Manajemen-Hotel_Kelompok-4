@@ -157,3 +157,9 @@ public class CheckOut extends javax.swing.JFrame {
                 bCheckOutActionPerformed(evt);
             }
         });
+
+        Cari.setText("Cari nomor kamar");
+        Cari.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                CariFocusGained(evt);
+            }
