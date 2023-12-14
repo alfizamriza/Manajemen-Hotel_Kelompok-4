@@ -19,3 +19,7 @@ import net.proteanit.sql.DbUtils;
  * @author Asus
  */
 public class CheckOut extends javax.swing.JFrame {
+  
+    Connection conn = Koneksi.getKoneksi();
+    ResultSet rs = null;
+    PreparedStatement pst = null;
