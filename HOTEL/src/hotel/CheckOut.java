@@ -181,3 +181,10 @@ public class CheckOut extends javax.swing.JFrame {
                 bCariActionPerformed(evt);
             }
         });
+
+                jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cross-small (1).png"))); // NOI18N
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
