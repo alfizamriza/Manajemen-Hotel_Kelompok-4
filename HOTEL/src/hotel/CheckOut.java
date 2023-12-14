@@ -146,3 +146,4 @@ public class CheckOut extends javax.swing.JFrame {
                 "Nama", "NIK", "No Kamar", "Tanggal", "Harga"
             }
         ));
+        jScrollPane1.setViewportView(tKosong);
